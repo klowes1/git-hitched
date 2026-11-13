@@ -5,7 +5,7 @@ welcome.update!(
   date: Date.new(2025, 9, 19),
   start_time: Time.zone.parse("17:00"),
   location: "Château de Flapjack",
-  location_url: "#",
+  location_url: "https://www.google.com/goto?url=CAESqAEBxCJF19DQYoFaS2lVtENjxfIhHUJ9TAiEZcpPTmT7ebKmTkH5wa2AoZgwd1baLfWyyTH1cmwdqHemE2TDKdFJ7O8RnudkQj0SgibzjajY962eNZF231QLZVzb8OmR-uWYmqjmaufOYeArB3KPVvLjvyB0CEfB55XfMchJm5MDdBDy23EL5WI1XYlqi4WgFWxjlAnTlXrXy8HsJNjWUMxeeATbaWBrQOI&gsessionid=6qF_OhqNPT75VIuxubQBbvOcNom1yLNEk-jixXnbzO3ZCRY2fsOlhg",
   address: "Route de Croissant, 13990 Buttersville, France",
   maps_url: "#",
   time_description: "5:00pm",
@@ -19,33 +19,33 @@ welcome.update!(
 
 ceremony = Event.find_or_create_by!(name: "Ceremony")
 ceremony.update!(
-  date: Date.new(2025, 9, 20),
+  date: Date.new(2027, 10, 04),
   start_time: Time.zone.parse("17:00"),
-  location: "Château de Flapjack",
-  location_url: "#",
-  address: "Route de Croissant, 13990 Buttersville, France",
-  maps_url: "#",
+  location: "Villa del Palmar",
+  location_url: "https://www.google.com/goto?url=CAESqAEBxCJF19DQYoFaS2lVtENjxfIhHUJ9TAiEZcpPTmT7ebKmTkH5wa2AoZgwd1baLfWyyTH1cmwdqHemE2TDKdFJ7O8RnudkQj0SgibzjajY962eNZF231QLZVzb8OmR-uWYmqjmaufOYeArB3KPVvLjvyB0CEfB55XfMchJm5MDdBDy23EL5WI1XYlqi4WgFWxjlAnTlXrXy8HsJNjWUMxeeATbaWBrQOI&gsessionid=6qF_OhqNPT75VIuxubQBbvOcNom1yLNEk-jixXnbzO3ZCRY2fsOlhg",
+  address: "Carretera a Punta Sam Km. 5.2 Mza 9 Lote 3 SM-2 Zona Continental de Isla Mujeres, 77400 Cancún, Q.R., Mexico",
+  maps_url: "https://www.google.com/maps/place/Villa+del+Palmar+Cancun+Family+Beach+Resort+%26+Spa/@21.2318866,-86.8038502,17z/data=!3m1!4b1!4m9!3m8!1s0x8f4c2e3fda2f7e81:0x6d2a3c7f61e592a6!5m2!4m1!1i2!8m2!3d21.2318866!4d-86.8038502!16s%2Fg%2F1tfjxbky?hl=en-us&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D",
   time_description: "Please arrive at 4:30pm for a 5:00pm Ceremony",
   attire: "Black Tie Optional",
-  attire_description: nil,
-  subtitle: "Saturday, September 20",
-  description: "The wedding ceremony at Château de Flapjack.",
+  attire_description: "Wear something nice",
+  subtitle: "Monday, October 4th",
+  description: "The wedding ceremony at Villa del Palmar.",
   sort_order: 2,
   image: "venue6.jpg"
 )
 
 reception = Event.find_or_create_by!(name: "Reception")
 reception.update!(
-  date: Date.new(2025, 9, 20),
+  date: Date.new(2027, 10, 04),
   start_time: Time.zone.parse("19:00"),
-  location: nil,
-  location_url: nil,
-  address: nil,
-  maps_url: nil,
+  location: "Villa del Palmar",
+  location_url: "https://www.google.com/goto?url=CAESqAEBxCJF19DQYoFaS2lVtENjxfIhHUJ9TAiEZcpPTmT7ebKmTkH5wa2AoZgwd1baLfWyyTH1cmwdqHemE2TDKdFJ7O8RnudkQj0SgibzjajY962eNZF231QLZVzb8OmR-uWYmqjmaufOYeArB3KPVvLjvyB0CEfB55XfMchJm5MDdBDy23EL5WI1XYlqi4WgFWxjlAnTlXrXy8HsJNjWUMxeeATbaWBrQOI&gsessionid=6qF_OhqNPT75VIuxubQBbvOcNom1yLNEk-jixXnbzO3ZCRY2fsOlhg",
+  address: "Carretera a Punta Sam Km. 5.2 Mza 9 Lote 3 SM-2 Zona Continental de Isla Mujeres, 77400 Cancún, Q.R., Mexico",
+  maps_url: "https://www.google.com/maps/place/Villa+del+Palmar+Cancun+Family+Beach+Resort+%26+Spa/@21.2318866,-86.8038502,17z/data=!3m1!4b1!4m9!3m8!1s0x8f4c2e3fda2f7e81:0x6d2a3c7f61e592a6!5m2!4m1!1i2!8m2!3d21.2318866!4d-86.8038502!16s%2Fg%2F1tfjxbky?hl=en-us&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D",
   time_description: "Following the Ceremony",
   attire: "Black Tie Optional",
-  attire_description: nil,
-  subtitle: "Saturday, September 20",
+  attire_description: "wear something nice",
+  subtitle: "Monday, October 4th",
   description: "After the aperitif, guests will be invited to continue the evening at a second location, where the celebrations will unfold with dinner and dancing.",
   sort_order: 3,
   image: "reception.png"
@@ -53,7 +53,7 @@ reception.update!(
 
 recovery = Event.find_or_create_by!(name: "Recovery")
 recovery.update!(
-  date: Date.new(2025, 9, 21),
+  date: Date.new(2027, 10, 05),
   start_time: Time.zone.parse("12:00"),
   location: nil,
   location_url: nil,
@@ -62,7 +62,7 @@ recovery.update!(
   time_description: nil,
   attire: "Casual Elegance",
   attire_description: nil,
-  subtitle: "Sunday, September 21",
+  subtitle: "Tuesday, October 5th",
   description: "A relaxed afternoon — slow, sunlit and celebratory. Details to follow.",
   sort_order: 4,
   image: "venue5.jpg"

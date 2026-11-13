@@ -3,13 +3,13 @@
 # Flip back to true anytime — no code changes needed.
 
 home: true
-events: false
+events: true
 travel: true
 stay: true
-explore: false
-attire: false
-faq: false
-our_story: false
-gallery: false
-rsvp: false
+explore: true
+attire: true
+faq: true
+our_story: true
+gallery: true
+rsvp: true
 hotel: false
